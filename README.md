@@ -10,14 +10,14 @@ Proiectul realizează o simulare avansată a unui semnal electrocardiografic (EK
 
 **Arhitectura Sistemului**
 
-  Hardware
+  **Hardware**
 Codul din `grafic.ino` funcționează ca un generator de funcții specializat:
 * **Unda P:** Simulează depolarizarea atrială.
 * **Complex QRS:** Recreează vârful înalt al depolarizării ventriculare.
 * **Unda T:** Simulează faza de repolarizare.
 * **Sincronizare:** Delay-ul este calculat automat pentru a respecta pragul de **100 BPM**.
   
-  Software
+  **Software**
 Scriptul `citire_date.py` prelucrează datele brute primite:
 * **Biblioteci utilizate:** `pyserial`, `matplotlib`, `drawnow`.
 * **Buffer:** Gestionează o fereastră glisantă (rolling window) care afișează ultimele 5 bătăi pentru o cursivitate maximă.
